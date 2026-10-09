@@ -9,7 +9,7 @@ form.addEventListener('submit', async (e) => {
         const dados = new FormData(form);
         const token = dados.get('token');
 
-        const data = await fetch('https://sendly-production-b679.up.railway.app/cadastroUpdate2?token=' + token);
+        const data = await fetch('https://sendly-production-8d6b.up.railway.app/cadastroUpdate2?token=' + token);
         if (data.ok) {
             sessionStorage.setItem("token", token);
             window.location.href = "./trocarSenha.html";
@@ -26,5 +26,5 @@ form.addEventListener('submit', async (e) => {
 reenviarToken.addEventListener('click', async (e) => {
     const dados = new FormData();
     dados.append('email', email);
-    await fetch('https://sendly-production-b679.up.railway.app/cadastroUpdate',{method: 'POST', body: dados});
+    await fetch('https://sendly-production-8d6b.up.railway.app/cadastroUpdate',{method: 'POST', body: dados});
 });
