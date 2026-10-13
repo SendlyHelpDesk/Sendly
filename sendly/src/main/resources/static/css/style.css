@@ -150,7 +150,6 @@ input[type="submit"]:hover{
 
     img{
         width: 22%;
-        height: fit-content;
         
     }
 
@@ -187,8 +186,6 @@ input[type="submit"]:hover{
 
     img{
         width: 22%;
-        height: fit-content;
-        
     }
 
     input[type="submit"]{

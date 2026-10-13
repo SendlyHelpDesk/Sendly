@@ -1,3 +1,4 @@
+
 const usuarioId = sessionStorage.getItem('usuarioId');//Recebe o Cookie
 const name = document.querySelector('#name');
 const endereco = document.querySelector('#endereco');
@@ -9,7 +10,9 @@ const statusDSM = document.querySelector('#statusDSM');
 const statusEndereco = document.querySelector('#statusEndereco');
 const statusEntregador = document.querySelector('#statusEntregador');
 
-const main = document.querySelector('main');
+//Todo este registro de HTML em variáveis abaixo morre ao trocar o main, por conta da cascata
+//Por isso o Event Listener é no main com condição para os filhos e não neles, além de buscar por id e não referência
+const main = document.querySelector('main');//Único vivo
 const buttonsRealizarEntrega = document.querySelector("#realizarEntrega");
 const buttonsRastrearPedido = document.querySelector("#rastrearPedido");
 const buttonsTrabalheConosco = document.querySelector("#trabalheConosco");
@@ -22,7 +25,7 @@ const buttonsSelecionarServico = document.querySelector("#selecionarServicoButto
 //Apagar todos os cookies: sessionStorage.clear();
 
 async function menuInfo(){ 
-const usuarioId = sessionStorage.getItem('usuarioId');//Recebe o Cookie]
+const usuarioId = sessionStorage.getItem('usuarioId');//Recebe o Cookie
 let data = await fetch(
     `https://sendly-production-8d6b.up.railway.app/cadastro?id=${usuarioId}`
 );
@@ -39,16 +42,25 @@ statusEntregador.innerHTML = 'Jorge Tomato Silva';
 //iconPerfil?
 };
 
+main.addEventListener(`click`, function(click){
+    const button = click.target.closest("button");
+
+    if(button || main.contains(button)){
+        setup(button);
+    }
+});
+
 function setup(button){
-    switch(button){
-        case buttonsRealizarEntrega:alert('oi');
+    switch(button.id){
+        case "realizarEntrega":buttonsRealizarEntregaPage(); 
+        break;
+        case "selecionarServicoButton":buttonsSelecionarServicoPage();
         break;
     };
 }
 
-buttonsRealizarEntrega.addEventListener('click', setup(buttonsRealizarEntrega));
 
-/* buttonsRealizarEntrega.addEventListener('click', ()=>{
+async function buttonsRealizarEntregaPage(){ 
     main.innerHTML = `
         <section id="paragrafoHero">
             <div>
@@ -65,20 +77,20 @@ buttonsRealizarEntrega.addEventListener('click', setup(buttonsRealizarEntrega));
             <button id="selecionarServicoButton">Selecionar Serviço</button>
         </section>
     `;
-}) */
+}
 
-
-
-buttonsSelecionarServico.addEventListener('click', ()=>{
+async function buttonsSelecionarServicoPage(){
     main.innerHTML = `
         <section id="buttonsHero">
             <button id="realizarEntrega">Solicitar Serviço</button>
-            <button id="selecionarServicoButton">Selecionar Serviço</button>
+            <button id="selecionarServicoButton">Selecionar Se</button>
         </section>
     `;
-});
+};
 
-/* buttonsRastrearPedido.
-buttonsTravalheConosco. */
+/*
+buttonsRastrearPedido.
+buttonsTravalheConosco.
+*/
 
-setInterval(menuInfo(), 180000);
+setInterval(menuInfo, 180000);

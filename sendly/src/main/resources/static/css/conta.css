@@ -172,7 +172,7 @@ input[type="submit"]:hover{
 @media(min-width:768px) and (orientation: landscape){
 
     form{
-        max-width: 30rem ;
+        max-width: 30rem;
     }
 
     body{
@@ -188,8 +188,6 @@ input[type="submit"]:hover{
 
     img{
         width: 22%;
-        height: fit-content;
-        
     }
 
     input[type="submit"]{
@@ -211,7 +209,6 @@ input[type="submit"]:hover{
     #imgD{
         position: fixed;
         width: 20%;
-        height: fit-content;
         top:60px;
         left: 60px;
     }
@@ -243,7 +240,6 @@ input[type="submit"]:hover{
 
     img{
         width: 22%;
-        height: fit-content;
         
     }
 
@@ -265,7 +261,6 @@ input[type="submit"]:hover{
 
     #imgD{
         width: 22.17%;
-        height: fit-content;
         position: fixed;
         top: 55.2%;
         transform: translateY(-70.1%);
