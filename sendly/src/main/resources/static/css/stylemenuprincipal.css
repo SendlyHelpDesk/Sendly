@@ -68,9 +68,10 @@ header div{
 }
 
 
-/* #userBox:hover{
-    transform: scale(1.01);
-}  */
+#userBox:hover{
+    /* transform: scale(1.01); */
+    cursor: pointer;
+} 
 
 
 #entregasAtivasDiv{
@@ -99,16 +100,23 @@ header section p{
     font-size: 1.0rem;
 }
 
-main{
+#hero{
+    height: 40dvh;
+    width: 50dvw;
     display: flex;
-    justify-content: space-between;
-    padding: 3rem;
-    height: 100vh;
-    width: 90dvw;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(173, 173, 173, 0.2);
+    border-radius: 45px;
+    transition: all 0.3s ease;
+}
+
+#hero:hover{
+    transform: scale(1.01);
 }
 
 #paragrafoHero{
-    width: 33.33%;
+    width: 25%;
 }
 
 #paragrafoHero p{
@@ -117,15 +125,13 @@ main{
 
 #imagemHero{
     display: flex;
-    WIDTH: 33.3%;
     align-self: center;
     justify-content: center;
 }
 
 img[src="imgs/icon_box.png"][alt="boxHero"]{
     height: auto;
-    max-width:35rem;
-    width: 35vw;
+    max-width:25rem;
     background-color: none;
     animation: animationu 6s infinite ease-in-out;
 }
@@ -134,7 +140,7 @@ button{
     text-transform: uppercase;
     width: 10vw;
     min-width: 12rem;
-    height: 5.25rem;
+    height: 3.12rem;
     border-radius: 1rem;
     cursor: pointer;
     border:0px;
@@ -143,14 +149,12 @@ button{
 #boxButtonsHero{
     display: flex;
     justify-content: end;
-    width: 33.33%;
 }
 
 #buttonsHero{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: white;
     width: max-content;
     height: max-content;
 }
@@ -245,7 +249,7 @@ footer section p{
 
 @keyframes animationu{
 0%      {transform: translateY(0);}
-50%     {transform: translateY(0.3rem);}
+50%     {transform: translateY(0.2rem);}
 100%    {transform: translateY(0);}
 }
 
@@ -286,11 +290,23 @@ footer section p{
         height: 8.5rem;
     }
 
-    /* importante!!!! */
-    main{
+    #hero{
         margin: 0;
         width: 100dvw;
+        padding: 3rem;
         background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0px;
+    }
+
+    body{
+        background: white;
+    }
+
+    #hero:hover{
+        transform: scale(1.0);
     }
 
     footer section p{

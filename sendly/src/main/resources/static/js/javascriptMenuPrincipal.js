@@ -92,5 +92,5 @@ async function buttonsSelecionarServicoPage(){
 buttonsRastrearPedido.
 buttonsTravalheConosco.
 */
-
+menuInfo();
 setInterval(menuInfo, 180000);

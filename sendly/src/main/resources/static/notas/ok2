@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&display=swap');
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;    
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    color-scheme: light;
+}
+
+footer, header{
+    background-color: white;
+}
+
+body{
+    background:
+    linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.999999999999999999)),
+    url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRkmTceRMWk0_vHL0GvWqxDDVdwTFow39MIEvtU8ctBOb4bAS0UsW46J0&s=10");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100dvw;
+    height: 100dvh;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid black;
+    padding-top: 0.68rem;
+    padding-bottom: 0.68rem;
+    padding-inline: 1.5rem;
+}
+
+a{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    height: 100%;
+    transition: all 0.1s ease-in-out;
+}
+
+a:hover{
+    transform: scale(1.02);
+}
+
+header div{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+#userBox:hover{
+    /* transform: scale(1.01); */
+    cursor: pointer;
+} 
+
+
+#entregasAtivasDiv{
+    justify-content: flex-start;
+}
+
+img{
+    align-self: center;
+    border-radius: 50%;
+    height: auto;
+    max-width:20%;
+}
+
+#entregadorIcon{
+    border-radius: 50%;
+    height: auto;
+    max-width: 20%;
+    background-color: gray;
+}
+
+header img{
+    margin: 0 1.43rem 0 1.75rem;
+}
+
+header section p{
+    font-size: 1.0rem;
+}
+
+#hero{
+    height: 40dvh;
+    width: 50dvw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(173, 173, 173, 0.2);
+    border-radius: 45px;
+    transition: all 0.3s ease;
+}
+
+#hero:hover{
+    transform: scale(1.01);
+}
+
+#paragrafoHero{
+    width: 25%;
+}
+
+#paragrafoHero p{
+    text-align: justify;
+}
+
+#imagemHero{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+img[src="imgs/icon_box.png"][alt="boxHero"]{
+    height: auto;
+    max-width:25rem;
+    background-color: none;
+    animation: animationu 6s infinite ease-in-out;
+}
+
+button{
+    text-transform: uppercase;
+    width: 10vw;
+    min-width: 12rem;
+    height: 3.12rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    border:0px;
+}
+
+#boxButtonsHero{
+    display: flex;
+    justify-content: end;
+}
+
+#buttonsHero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: max-content;
+    height: max-content;
+}
+
+#buttonsHero button{
+    font-family: 'Inter', sans-serif;
+    background-color: #000000;
+    color: rgba(255, 255, 255, 0.8 );
+    font-weight: 400;
+    transition: 0.3s;
+}
+
+#buttonsHero button:hover{
+    transform: scale(1.02);
+}
+
+#buttonsHero button:nth-child(3){
+    background-color: #B3B3B3;
+    font-family: 'Inter', sans-serif;
+    margin-top: 3rem;
+    font-weight: 700;
+    border: none;
+    color: white;
+}
+
+#buttonsHero button:nth-child(2){
+    margin-top: 0.1rem;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-top: 1px solid black;
+    padding: 1.31rem;
+    width: 100%;
+}
+
+label:has(a){
+    background-color: red;
+}
+
+footer div{
+    display: flex;
+    justify-content: space-between;
+}
+
+h1{
+    font-family: "Atkinson Hyperlegible Mono", sans-serif;
+    font-weight: 600;
+    color: #000000;
+}
+
+h2{
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    text-align: left;
+    margin-bottom: 0.4rem;
+}
+
+#status{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#statusTempo{
+    justify-self: flex-end;
+}
+
+#status section div{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer section img{
+    max-width: 30%;
+    margin-left: 0.5rem;
+}
+
+footer section p{
+    font-size: 0.7rem;
+}
+
+#buttonsHero #selecionarServicoButton{
+    margin-top: 30dvh;
+    background-color: #B3B3B3;
+}
+
+
+@keyframes animationu{
+0%      {transform: translateY(0);}
+50%     {transform: translateY(0.2rem);}
+100%    {transform: translateY(0);}
+}
+
+@media(max-width:1199px){
+
+    *{
+        font-size: 12px;
+    }
+
+    header img{
+        margin: 0.01rem;
+    }
+
+    header section p {
+        font-size: 0.7rem;
+    }
+
+    #imagemHero{
+        display:none;
+    }
+
+    #paragrafoHero{
+        display: none;
+    }
+
+    #boxButtonsHero{
+        align-items: center;
+        width: 100%;
+    }
+
+    #buttonsHero{
+        align-items: center;
+        width: 100%;
+    }
+
+    button{
+        width: 100%;
+        height: 8.5rem;
+    }
+
+    #hero{
+        margin: 0;
+        width: 100dvw;
+        min-height: 100%;
+        padding: 3rem;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0px;
+    }
+
+    #hero:hover{
+        transform: scale(1.0);
+    }
+
+    footer section p{
+        font-size: 0.7rem;
+    }
+
+    h1{
+        font-size: 16px;
+    }
+
+    #status{
+        width: 50%;
+    }
+}
