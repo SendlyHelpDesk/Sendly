@@ -9,7 +9,7 @@ form.addEventListener('submit', async (e) => {
 
     const dados = new FormData(form);
 
-    let data = await fetch('https://sendly-production-8d6b.up.railway.app/cadastro',{method: 'POST', body: dados});
+    let data = await fetch('https://sendly.up.railway.app/cadastro',{method: 'POST', body: dados});
     
     data = await data.json();
 

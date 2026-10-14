@@ -7,7 +7,7 @@ form.addEventListener('submit', async (e) => {
     const dados = new FormData(form);
     const email = dados.get('email');
     
-    const data = await fetch('https://sendly-production-8d6b.up.railway.app/cadastroUpdate',{method: 'POST', body: dados});
+    const data = await fetch('https://sendly.up.railway.app/cadastroUpdate',{method: 'POST', body: dados});
         
     if(await data.text() === "Gmail inválido"){
         errorP.innerHTML = 'Gmail incorreto. Tente novamente'

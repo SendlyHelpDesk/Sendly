@@ -7,7 +7,7 @@ form.addEventListener('submit', async (e) => {
     const dados = new FormData(form);
     dados.append('token', token);
     try{
-        const data = await fetch('https://sendly-production-8d6b.up.railway.app/cadastroUpdate3',{method: 'POST', body: dados});
+        const data = await fetch('https://sendly.up.railway.app/cadastroUpdate3',{method: 'POST', body: dados});
         
         if(data.ok){
             alert("Sua senha foi alterada com sucesso");
