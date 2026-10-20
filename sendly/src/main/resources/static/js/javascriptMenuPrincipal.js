@@ -87,7 +87,6 @@ async function buttonsSelecionarServicoPage(){
         </section>
     `;
 };
-
 /*
 buttonsRastrearPedido.
 buttonsTravalheConosco.

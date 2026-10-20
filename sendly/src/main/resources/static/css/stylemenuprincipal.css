@@ -33,13 +33,21 @@ body{
 
 header{
     display: flex;
-    justify-content: space-between;
     align-items: center;
     width: 100%;
     border-bottom: 1px solid black;
     padding-top: 0.68rem;
     padding-bottom: 0.68rem;
     padding-inline: 1.5rem;
+}
+
+header ul{
+    display: flex;
+    align-content: flex-end;
+    align-items: flex-end;
+    list-style-type: none;
+    height: 80%;
+    width: 30%;
 }
 
 a{
@@ -56,8 +64,27 @@ a{
     transition: all 0.1s ease-in-out;
 }
 
+header ul li{
+    padding-inline: 1dvw;
+    border-left: #000000 1px solid;
+}
+
+header ul li:nth-child(1){
+    border-left:none;
+    margin-right: -2dvw;
+}
+
 a:hover{
     transform: scale(1.02);
+}
+
+#sendlyHeader{
+    text-transform: none;
+    transform: none;
+    font-family: "Atkinson Hyperlegible Mono", sans-serif;
+    font-weight: 600;
+    color: #000000;
+
 }
 
 header div{
@@ -65,14 +92,21 @@ header div{
     align-items: center;
     justify-content: flex-end;
     transition: transform 0.3s ease-in-out;
+    width: 70%;
 }
 
+header div section{
+    width: 12dvw;
+}
+
+#entregasButtom{
+    display: none;
+}
 
 #userBox:hover{
     /* transform: scale(1.01); */
     cursor: pointer;
 } 
-
 
 #entregasAtivasDiv{
     justify-content: flex-start;
@@ -93,19 +127,37 @@ img{
 }
 
 header img{
-    margin: 0 1.43rem 0 1.75rem;
+    margin: 0rem 1.43rem 0rem 0rem;
+    margin-left: 0rem;
+    max-width:8%;
 }
 
 header section p{
     font-size: 1.0rem;
 }
 
-#hero{
-    height: 40dvh;
-    width: 50dvw;
+main{
+    display: block;
+    width: 100%;
+}
+
+.section{
+    margin-top: 3dvw;
+}
+
+.boxHero{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+}
+
+#hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50dvh;
+    width: 50dvw;
     background-color: rgb(173, 173, 173, 0.2);
     border-radius: 45px;
     transition: all 0.3s ease;
@@ -146,13 +198,9 @@ button{
     border:0px;
 }
 
-#boxButtonsHero{
-    display: flex;
-    justify-content: end;
-}
-
 #buttonsHero{
     display: flex;
+    justify-content: end;
     flex-direction: column;
     align-items: center;
     width: max-content;
@@ -184,6 +232,11 @@ button{
     margin-top: 0.1rem;
 }
 
+#InfosMain{
+    width: 100%;
+    background-color: black;
+}
+
 footer{
     display: flex;
     justify-content: space-between;
@@ -191,10 +244,6 @@ footer{
     border-top: 1px solid black;
     padding: 1.31rem;
     width: 100%;
-}
-
-label:has(a){
-    background-color: red;
 }
 
 footer div{
@@ -259,12 +308,33 @@ footer section p{
         font-size: 12px;
     }
 
+    header ul{
+        display:none;
+    }
+
     header img{
         margin: 0.01rem;
     }
 
     header section p {
         font-size: 0.7rem;
+    }
+
+    header img{
+        max-width: 20%;
+    }
+
+    header div{
+        width: auto;
+        justify-content: flex-end;
+    }
+
+    header div section{
+        width: 28vw;
+    }
+
+    #entregasButtom {
+        display: flex;
     }
 
     #imagemHero{
@@ -291,14 +361,9 @@ footer section p{
     }
 
     #hero{
-        margin: 0;
         width: 100dvw;
         padding: 3rem;
         background-color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 0px;
     }
 
     body{
