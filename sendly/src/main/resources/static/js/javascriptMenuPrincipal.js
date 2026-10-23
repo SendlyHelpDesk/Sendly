@@ -10,6 +10,12 @@ const statusDSM = document.querySelector('#statusDSM');
 const statusEndereco = document.querySelector('#statusEndereco');
 const statusEntregador = document.querySelector('#statusEntregador');
 
+
+//ADICIONAR ESTES
+const totalEntregas = document.querySelector('#totalEntregas');
+const totalEntregasRealizadas = document.querySelector('#totalEntregasRealizadas');
+const totalEntregasSolicitadas = document.querySelector('#totalEntregasSolicitadas');
+
 //Todo este registro de HTML em variáveis abaixo morre ao trocar o main, por conta da cascata
 //Por isso o Event Listener é no main com condição para os filhos e não neles, além de buscar por id e não referência
 const main = document.querySelector('main');//Único vivo

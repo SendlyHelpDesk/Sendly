@@ -38,14 +38,14 @@
     <main>
         <section class="boxHero section">
             <div id="hero">
-                <div id="paragrafoHero">
+                <div id="paragrafoHero" class="noCelular">
                     <div>
                         <h1>Sendly</h1>
                         <p>Somos uma séria empresa de negócios, onde você e o pacote são a prioridade.</p>
                     </div>
                 </div>
-                <div id="imagemHero">
-                    <img src="imgs/icon_box.png" alt="boxHero">
+                <div id="imagemHero" class="noCelular">
+                    <img class="noCelular" src="imgs/icon_box.png" alt="boxHero">
                 </div>
 
                 <div id="buttonsHero">
@@ -55,11 +55,20 @@
                 </div>
             </div>
         </section>
-        <section class="section" id="InfosMain">
+        <section class="section noCelular" id="infosMain">
             <ul>
-                <li><!-- CONTINUA --></li>
-                <li></li>
-                <li></li>
+                <li>
+                    <p>Serviços Realizados</p>
+                    <p class="totaisEspecializados" id="totalEntregasRealizadas">0</p>
+                </li>
+                <li id="totalEntregasInfo">
+                    <h1>Total de Entregas</h1>
+                    <p id="totalGeneralizado" id="totalEntregas">0</p>
+                </li>
+                <li>
+                    <p>Serviços Solicitados</p>
+                    <p class="totaisEspecializados" id="totalEntregasSolicitadas">0</p>
+                </li>
             </ul>
         </section>
     </main>

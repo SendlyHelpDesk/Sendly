@@ -27,7 +27,7 @@ body{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 100dvw;
+    width: 100%;
     height: 100dvh;
 }
 
@@ -137,8 +137,11 @@ header section p{
 }
 
 main{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
     width: 100%;
+    height: 100%;
 }
 
 .section{
@@ -150,13 +153,16 @@ main{
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 25%;
+    /* margin-top: -10dvw; */
 }
 
 #hero{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50dvh;
+    height: 30dvh;
+    min-height:16dvw;
     width: 50dvw;
     background-color: rgb(173, 173, 173, 0.2);
     border-radius: 45px;
@@ -168,7 +174,8 @@ main{
 }
 
 #paragrafoHero{
-    width: 25%;
+    width: 29%;
+    font-size: 1dvw;
 }
 
 #paragrafoHero p{
@@ -183,19 +190,19 @@ main{
 
 img[src="imgs/icon_box.png"][alt="boxHero"]{
     height: auto;
-    max-width:25rem;
+    max-width:22dvw;
     background-color: none;
     animation: animationu 6s infinite ease-in-out;
 }
 
 button{
     text-transform: uppercase;
-    width: 10vw;
-    min-width: 12rem;
+    width: 10dvw;
     height: 3.12rem;
     border-radius: 1rem;
     cursor: pointer;
     border:0px;
+    font-size: 0.7dvw;
 }
 
 #buttonsHero{
@@ -222,7 +229,7 @@ button{
 #buttonsHero button:nth-child(3){
     background-color: #B3B3B3;
     font-family: 'Inter', sans-serif;
-    margin-top: 3rem;
+    margin-top: 1dvw;
     font-weight: 700;
     border: none;
     color: white;
@@ -232,15 +239,70 @@ button{
     margin-top: 0.1rem;
 }
 
-#InfosMain{
+#infosMain{
+    display: flex;
+    height: 38%;
+    min-height: 10dvw;
+    margin-top: 6dvw;
+}
+
+#infosMain ul{
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
     width: 100%;
+}
+
+#infosMain li{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    text-align: center;
     background-color: black;
+    color: white;
+    width: 100%;
+    padding: 13px;
+}
+
+#infosMain li p{
+    font-family: 'Atkinson Hyperlegible Mono';
+    list-style-type: none;
+    color: white;
+    font-weight: 700;
+}
+
+#infosMain li p:nth-child(1){
+    z-index: 1;
+}
+
+.totaisEspecializados{
+    font-size: 5dvw;
+}
+
+#totalGeneralizado{
+    font-size: 8dvw;
+}
+
+.totaisEspecializados, #totalGeneralizado{
+    margin-top: -1dvw;
+}
+
+#totalEntregasInfo h1{
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    font-family: 'Atkinson Hyperlegible Mono';
+    list-style-type: none;
+    background-color: black;
+    color: white;
+    width: 100%;
+    font-weight: 700;
 }
 
 footer{
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: end;
     border-top: 1px solid black;
     padding: 1.31rem;
     width: 100%;
@@ -337,12 +399,16 @@ footer section p{
         display: flex;
     }
 
-    #imagemHero{
-        display:none;
+    .noCelular{
+        display: none!important;
     }
 
-    #paragrafoHero{
-        display: none;
+    main{
+        height: auto;
+    }
+
+    .boxHero{
+        height: auto;
     }
 
     #boxButtonsHero{
@@ -358,6 +424,7 @@ footer section p{
     button{
         width: 100%;
         height: 8.5rem;
+        font-size: 3.5dvw;
     }
 
     #hero{
@@ -372,6 +439,11 @@ footer section p{
 
     #hero:hover{
         transform: scale(1.0);
+    }
+
+
+    #buttonsHero button:nth-child(3){
+        margin-top: 12dvw;
     }
 
     footer section p{
