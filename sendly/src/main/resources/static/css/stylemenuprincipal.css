@@ -299,6 +299,42 @@ button{
     font-weight: 700;
 }
 
+#recycleView{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 80dvh;
+    padding: 5dvw;
+}
+
+.boxSendly{
+    display: flex;
+    background-color: black;
+    color: white;
+    min-height: 10rem;
+    margin-top: 3rem;
+    border-radius: 12.5px;
+    padding: 24px;
+}
+
+.boxSendly:nth-child(1){
+    margin-top: 0px;
+}
+
+.boxSendly img{
+    border-radius: 12%;
+    padding: 13px 10px 13px 10px;
+}
+
+.boxSendly h1{
+    color: white;
+}
+
+.boxSendly div{
+    /*  */
+}
+
 footer{
     display: flex;
     justify-content: space-between;
@@ -418,6 +454,7 @@ footer section p{
 
     #buttonsHero{
         align-items: center;
+        padding: 3rem;
         width: 100%;
     }
 
@@ -429,7 +466,6 @@ footer section p{
 
     #hero{
         width: 100dvw;
-        padding: 3rem;
         background-color: white;
     }
 

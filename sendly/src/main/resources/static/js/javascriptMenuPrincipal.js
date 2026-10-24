@@ -68,28 +68,19 @@ function setup(button){
 
 async function buttonsRealizarEntregaPage(){ 
     main.innerHTML = `
-        <section id="paragrafoHero">
-            <div>
-                <h1>Sendly</h1>
-                <p>Somos uma séria empresa de negócios, onde você e o pacote</p>
-                <p> são a prioridade.</p>
-            </div>
-        </section>
-        <section id="imagemHero">
-            <img src="imgs/icon_box.png" alt="boxHero">
-        </section>
-        <section id="buttonsHero">
-            <button id="realizarEntrega">Solicitar Serviço</button>
-            <button id="selecionarServicoButton">Selecionar Serviço</button>
+        <section class="boxHero section">
+                <div id="buttonsHero">
+                    <button id="realizarEntrega">Solicitar Serviço</button>
+                    <button id="selecionarServicoButton">Selecionar Serviço</button>
+                </div>
         </section>
     `;
 }
 
 async function buttonsSelecionarServicoPage(){
     main.innerHTML = `
-        <section id="buttonsHero">
-            <button id="realizarEntrega">Solicitar Serviço</button>
-            <button id="selecionarServicoButton">Selecionar Se</button>
+        <section id="recycleView">
+            
         </section>
     `;
 };
