@@ -435,7 +435,7 @@ footer section p{
     }
 
     main{
-        margin: 50dvw 0dvw 100dvw 0dvw;
+        margin: 25dvw 0dvw 100dvw 0dvw;
         padding-bottom: 25dvw;
     }
 
@@ -466,6 +466,10 @@ footer section p{
 
     #entregasButtom {
         display: flex;
+    }
+
+    .celAdjusteTop{
+        margin-top: 50dvw;
     }
 
     .noCelular{
