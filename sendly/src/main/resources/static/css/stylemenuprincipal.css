@@ -308,6 +308,12 @@ button{
     padding: 5dvw;
 }
 
+#sectionTrabalheConosco{
+    padding: 5dvw;
+    background-color: white;
+    position: fixed;
+}
+
 .boxSendly{
     display: flex;
     background-color: black;
