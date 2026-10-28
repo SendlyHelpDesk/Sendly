@@ -322,6 +322,11 @@ button{
     margin-top: 3rem;
     border-radius: 12.5px;
     padding: 24px;
+    transition: 0.05s;
+}
+
+.boxSendly:hover{
+    background-color: #535151;
 }
 
 .boxSendly:nth-child(1){

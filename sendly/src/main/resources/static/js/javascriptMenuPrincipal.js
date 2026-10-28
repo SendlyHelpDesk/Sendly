@@ -11,7 +11,7 @@ const statusEndereco = document.querySelector('#statusEndereco');
 const statusEntregador = document.querySelector('#statusEntregador');
 
 
-//ADICIONAR ESTES
+//ADICIONAR ESTES da telaInicial
 const totalEntregas = document.querySelector('#totalEntregas');
 const totalEntregasRealizadas = document.querySelector('#totalEntregasRealizadas');
 const totalEntregasSolicitadas = document.querySelector('#totalEntregasSolicitadas');
